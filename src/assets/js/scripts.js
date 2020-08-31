@@ -31,9 +31,17 @@
     });
 
     // Closes responsive menu when a scroll trigger link is clicked
-    $(".js-scroll-trigger").click(function () {
+    $(document).on('click','.js-scroll-trigger').click(function () {
         $(".navbar-collapse").collapse("hide");
     });
+
+    // $(document).on('click','.portfolio-block, .menu-item', function() {
+
+//    // Closes responsive menu when a scroll trigger link is clicked
+//    $(".js-scroll-trigger").click(function () {
+//     $(".navbar-collapse").collapse("hide");
+// });
+
 
     // Activate scrollspy to add active class to navbar items on scroll
     $("body").scrollspy({
